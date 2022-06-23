@@ -1,0 +1,213 @@
+<html>
+<head>
+<title>LNJPITians LIBRARY</title>
+<link rel="shortcut icon"  href="img/lnjpit.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+ <script type="text/javascript">
+    $(function() {
+  // Sidebar toggle behavior
+  $('#sidebarCollapse').on('click', function() {
+    $('#sidebar,#content').toggleClass('active');
+  });
+});
+  </script>
+
+
+  <style>
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
+
+body {
+  background: #599fd9;
+  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
+  background: linear-gradient(to right, #599fd9, #c2e59c);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
+input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 25px;
+  width:70%;
+  border: none;
+}
+
+input[type=submit] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 25px;
+  border: none;
+}
+.button{
+  background: #ddd;
+  font-size: 25px;
+  border: none;
+  width:50px;
+  height:50px;
+  cursor: pointer;
+}
+
+#content{
+justift-content:center;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+</head>
+
+<body>
+<!-- Vertical navbar -->
+<div class="vertical-nav bg-white" id="sidebar">
+  <div class="py-4 px-3 mb-4 bg-light">
+    <div class="media d-flex align-items-center"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+      <div class="media-body">
+        <h4 class="m-0">Student Name</h4>
+        <p class="font-weight-light text-muted mb-0">Branch Name</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+
+  <ul class="nav flex-column bg-white mb-0">
+	 <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+                <i class="fa fa-user mr-3 text-primary fa-fw"></i>
+                View Profile
+            </a>
+    </li>
+	 <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+                <i class="fa fa-pencil mr-3 text-primary fa-fw"></i>
+                Update Profile
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-book mr-3 text-primary fa-fw"></i>
+                All Books
+            </a>
+   
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-file-text mr-3 text-primary fa-fw"></i>
+                Prev Year Questions
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-book mr-3 text-primary fa-fw"></i>
+                E-Books
+            </a>
+    </li>
+	<li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-file-text-o mr-3 text-primary fa-fw"></i>
+                Notes
+            </a>
+    </li>
+	<li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-file mr-3 text-primary fa-fw"></i>
+                Request for new Books
+            </a>
+    </li>
+	   <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-hand-paper-o mr-3 text-primary fa-fw"></i>
+                Notice Board
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-window-close mr-3 text-primary fa-fw"></i>
+                Logout
+            </a>
+    </li>
+  </ul>
+</div>
+<!-- End vertical navbar -->
+
+
+<!-- Page content holder -->
+<div class="page-content p-5" id="content">
+  <!-- Toggle button -->
+  <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
+<br><br>
+  <!-- Demo content -->
+  <h2 class="display-3 text-white">LNJPITians LIBRARY</h2>
+  <br><br>
+  <p class="display-4 lead text-white mb-0">Welcome To Online Library Management System</p>
+  <br><br>
+<div class="search-container">
+    <form action="/action_page.html">
+      <input type="text" placeholder="Search Books..." name="search">
+      <button type="submit" class="button"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  <h1 style="color:red;">This Site Is Under Maintenance...</h1>
+  </div>
+
+</body>
+</html>

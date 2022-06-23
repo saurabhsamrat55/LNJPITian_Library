@@ -1,0 +1,419 @@
+.body{
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    color:#4e4e4e;
+    line-height: 22px;
+    margin-top: 80px;
+	background:url("img/colour.jpg");
+	background-repeat:no repeat;
+	background-size: 100% 100%;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	background-image:url('img/img (3).jpg');
+	  background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    -webkit-transition: color 300ms, background-color 300ms;
+    -moz-transition: color 300ms, background-color 300ms;
+    -o-transition:  color 300ms, background-color 300ms;
+    transition:  color 300ms, background-color 300ms;
+    font-size: 20px;
+
+}
+ul a:hover,ul a:focus {
+    font-weight: bold;
+    color: black;
+    transform:scale(1.1,1.1);
+    box-shadow: 0 0 10px white;
+}
+
+.navimg{
+    font-family: Algerian;
+}
+.navimg:hover,.navimg:focus{
+    box-shadow: 0 0 10px white;
+}
+
+
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+.fa-1x {
+    font-size: 1.5rem;
+}
+
+a:hover,
+a:focus {
+    color: #111;
+    text-decoration: none;
+    outline: none;
+}
+.navbar-inverse .navbar-nav .dropdown-menu {
+    background-color: white !important;
+}
+
+.dropdown-menu {
+    margin-top: -1px;
+    min-width: 180px;
+}
+
+.dropdown-menu:hover {
+	color: #111;
+    text-decoration: none;
+    outline: none;
+}
+
+
+.dropdown-item{
+    color: white;
+    background-color: #151515;
+    box-shadow: 0 0 10px white;
+}
+.dropdown-item:hover{
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 10px white;
+}
+.media>.pull-left{
+    margin-right: 20px;
+}
+
+.media>.pull-right{
+    margin-left: 20px;
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+    margin-bottom: 0;
+}
+
+@-webkit-keyframes scaleIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+#header{
+    display: inline-block!important;
+    position: fixed;
+    overflow: inherit;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+    background: #151515;
+    padding: 15px 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav{
+    margin-top: 12px;
+}
+.nav > li  > .navBarItem
+{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.navBarItem:focus
+{
+    position: absolute;
+}
+
+.navLi
+{
+    padding:15px;
+}
+
+.navInline
+{
+    display: inline;
+}
+
+.navbar-nav>li{
+    margin-left: 20px;
+    padding-bottom: 28px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    padding: 5px 12px;
+    margin: 0;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: #fff;
+}
+
+.navbar-inverse {
+    border: none;
+}
+
+.navbar-inverse .navbar-brand {
+    font-size: 36px;
+    line-height: 50px;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu {
+    background-color: rgba(0,0,0,.85);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+    -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+    border: 0;
+    padding: 0;
+    margin-top: 0;
+    border-top: 0;
+    border-radius: 0;
+    left: 0;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu:before{
+    position: absolute;
+    top:0;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li > a {
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
+.navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
+.navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li.divider {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-top: 0;
+    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+    background-color: black;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    justify-content: center;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.form-div{
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    margin: 150px auto;
+    margin-bottom: 3px;
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px #947e65;
+    border-radius: 10px;
+}
+
+.form-div:hover{
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+
+.form-div .fa{
+    margin-top: -50px;
+    font-size: 100px;
+    background-color: #947e65;
+    border-radius: 50%;
+    padding: 5px;
+}
+.form-div h2{
+    color: white;
+    margin-top: 10px;
+}
+input[type='text'],
+input[type='password']{
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    height: 35px;
+    background: transparent;
+    color: white;
+    border-bottom: 3px solid #947e65;
+    width: 200px;
+}
+input[type='text']:focus,
+input[type='password']:focus{
+    border-bottom: 3px solid #dac7ac;
+}
+input[type='submit']{
+    background-color:green;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 50px;
+}
+.btn-block{
+    background-color:green;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    width: 180px;
+}
+form a{
+	text-align:center;
+	color:black;
+}
+input[type='submit']:hover,.btn-block:hover{
+    background-color: green;
+    box-shadow: 0 0 5px burlywood ;
+    color: white;
+}
+
+
+/* Body Part*/
+
+.carousel .carousel-indicators li {
+    max-width: 30px;
+    height: 5px;
+    width: 30px;
+    border-radius: 10% !important;
+    cursor:pointer;
+}
+.carousel-inner img{
+    height:380px;
+    border-radius: 2%;
+	transition:smooth;
+}
+
+.img-fluid{
+    box-shadow: 0 0 10px #043d3d;
+}
+}
+
+#importantlinks{
+    border-style:solid;
+    font-family: Algerian sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 20px;
+    color: blue;
+    background-color: #bbb;
+    border-style: solid;
+    border-color: black;
+    border-radius:30px;
+    margin-right: -10px;
+    box-shadow: 0 0 5px black;
+}
+
+
+#impotantlinks h2 {
+    margin-left: 15px;
+    color:darkcyan;
+}
+#impotantlinks h3 {
+    font-size: 15px;
+    padding: 8px;
+    margin-left: 15px;
+    color:blue !important;
+}
+
+
+
+ .flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: transparent;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  color: black;
+    border-radius: 10%;
+  transform: rotateY(180deg);
+}

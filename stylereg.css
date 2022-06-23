@@ -1,0 +1,377 @@
+.main{
+    background-image: url("img/book.jpg")!important;
+    background-attachment: fixed;
+}
+
+.nav-link, .waves-effect, .waves-light:hover{
+	color:white !important;
+}
+
+/* Header Footer Part  */
+.body{
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    line-height: 22px;
+    margin-top: 67px;
+}
+a {
+    color: black;
+    font-weight: bold;
+    -webkit-transition: color 300ms, background-color 300ms;
+    -moz-transition: color 300ms, background-color 300ms;
+    -o-transition:  color 300ms, background-color 300ms;
+    transition:  color 300ms, background-color 300ms;
+    font-size: 20px;
+
+}
+ul a:hover,ul a:focus {
+    font-weight: bold;
+    color: black;
+    transform:scale(1.1,1.1);
+    box-shadow: 0 0 10px white;
+}
+.navimg{
+    font-family: Algerian;
+}
+.navimg:hover,.navimg:focus{
+    box-shadow: 0 0 10px white;
+}
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+.fa-1x {
+    font-size: 1.5rem;
+}
+
+a:hover,
+a:focus {
+    color: #111;
+    text-decoration: none;
+    outline: none;
+}
+
+.dropdown-menu {
+    margin-top: -1px;
+    min-width: 180px;
+}
+
+.dropdown-item{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #151515;
+    box-shadow: 0 0 10px white;
+}
+.dropdown-item:hover{
+    color: white;
+    background-color: black;:;;
+    box-shadow: 0 0 10px white;
+}
+.media>.pull-left{
+    margin-right: 20px;
+}
+
+.media>.pull-right{
+    margin-left: 20px;
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+    margin-bottom: 0;
+}
+
+@-webkit-keyframes scaleIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+#header{
+    display: inline-block!important;
+    position: fixed;
+    overflow: inherit;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+    background: #151515;
+    padding: 15px 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav{
+    margin-top: 12px;
+}
+.nav > li  > .navBarItem
+{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.navBarItem:focus
+{
+    position: absolute;
+}
+
+.navLi
+{
+    padding:15px;
+}
+
+.navInline
+{
+    display: inline;
+}
+
+.navbar-nav>li{
+    margin-left: 20px;
+    padding-bottom: 28px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    padding: 5px 12px;
+    margin: 0;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 24px;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.navbar-inverse {
+    border: none;
+}
+
+.navbar-inverse .navbar-brand {
+    font-size: 36px;
+    line-height: 50px;
+    color: black;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: black;
+    color: black;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu {
+    background-color: rgba(0,0,0,.85);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+    -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+    border: 0;
+    padding: 0;
+    margin-top: 0;
+    border-top: 0;
+    border-radius: 0;
+    left: 0;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu:before{
+    position: absolute;
+    top:0;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li > a {
+    padding: 8px 15px;
+    color: black;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
+.navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
+.navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
+    background-color: black;
+    color: black;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li.divider {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-top: 0;
+    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+    background-color: black;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+}
+
+h1{
+    text-align: center;
+    font-family: "Algerian";
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 10px yellow;
+}
+fieldset{
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    width: 60%;
+    margin: 15px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0 0 10px black;
+    font-weight: bold;
+}
+
+legend{
+    background-image: url("img/background2.jpg");
+    padding: 14px 10px;
+    margin-top: -40px;
+    float: left;
+    width: 32%;
+    border: 2px solid white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: "Old English Text MT",sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type='text'],
+input[type='date'],
+input[type='month'],
+input[type='time'],
+input[type='number'],
+input[type='email']{
+    height: 35px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: black;
+}
+
+input[type='date']{
+    width:220px;
+    height:35px;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+input[type='password']{
+    width:220px;
+    height:35px;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+
+}
+
+textarea{
+    border: none;
+    outline: none;
+    width: 220px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+input[type='text']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='time']:focus,
+input[type='number']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+textarea:focus{
+    box-shadow: 0 0 10px darkred;
+}
+select{
+    height: 35px;
+    font-size: 15px;
+    width: 200px;
+    border-radius: 5px;
+}
+.button{
+    background-image: url("img/background2.jpg");
+    color: white;
+    outline: none;
+    font-size: 18px;
+    padding: 14px 55px;
+    border: 3px solid white;
+    border-color: orangered;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.button:hover{
+    box-shadow: 0 0 10px white;
+}
+
+select{
+    color: black;
+}
+
+table{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+td{
+    padding: 15px;
+}
+
+#choose{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+form{
+    display: contents;
+}
+
+.image{
+    width:140px;
+    height: 120px;
+    border-radius: 20%;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}

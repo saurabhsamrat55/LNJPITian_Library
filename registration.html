@@ -1,0 +1,295 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LNJPIT ONLINE E-LIBRARY ">
+<meta name="keywords" content="LNJPIT ONLINE E-LIBRARY">
+<meta name="author" content="LNJPIT">
+<title>LNJPITians LIBRARY</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrapcdn.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+	<link href="stylereg.css" rel="stylesheet">
+    <link href="bootstrap/css/responsive.css" rel="stylesheet">
+<!-- google font for logos -->
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon"  href="img/lnjpit.ico">
+</head>
+<body class="body">
+<header id="header">
+<nav class="navbar navbar-expand-lg navbar-inverse navbar-dark bg-dark" role="banner">
+<div class="container">
+<div class="navbar-header ">
+<div class="navimg">
+<a href="index.html">
+<img src="img/lnjpit.jpg" style="width: 80px;height:80px;margin-top:-10px;"><b style="font-size: 35px; color: white">  LNJPIT LIBRARY</b></a>
+</div>
+</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
+</span></button>
+<div class="navbar-collapse collapse" id="navbarSupportedContent15">
+<ul class="nav navbar-nav">
+<li class="nav-item ">
+<a class="nav-link" href="index.html"> <i class="fa fa-home"> Home</i></a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<i class="fa fa-user-circle"> Login</i>
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item" href="studentlogin.html"><i class="fa fa-user"> Student Login</i></a>
+<a class="dropdown-item" href="adminlogin.html"><i class="fa fa-user-md"> Admin Login</i></a>
+</div>
+</li>
+<li class="nav-item active" id="regwhite">
+<a class="nav-link" href="registration.html"><i class="fa fa-user-plus"> Registration</i></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="about.html"><i class="fa fa-info-circle"> About Us</i></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="contact.html"><i class="fa fa-address-card"> Contact Us</i></a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+<br>
+<section class="main">
+    <h1> Lnjpit Library Registration Form</h1>
+    <br>
+
+<center>
+    <form name="myform" action="" method="post" enctype="multipart/form-data">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <input type="text" name="firstname" required>
+                    </td>
+                    <td>Last Name</td>
+                    <td>
+                        <input type="text" name="lastname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Father's Name</td>
+                    <td>
+                        <input type="text" name="fathername" required>
+                    </td>
+                    <td>Mother's Name</td>
+                    <td>
+                        <input type="text" name="mothername" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Permanent Address</td>
+                    <td>
+                        <textarea rows="5" cols="20" name="address" required></textarea>
+                    </td>
+                    <td>Upload Your Image</td>
+                    <td>
+                        <input type="file" accept="image/*" onchange="preview_image(event)" name="image" required> <img id="output_image" class="image"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select Gender</td>
+                    <td>
+                        <select name="image" required id="choose">
+                            <option value="" disabled selected hidden> </option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                    <td>Date Of Birth</td>
+                    <td>
+                        <input type="date" name="dob" required>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>E-Mail Id</td>
+                    <td>
+                        <input type="email" name="email" required>
+                    </td>
+
+                    <td>Mobile Number</td>
+                    <td>
+                        <input type="number" name="mno" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="password" id="password" required>
+                    </td>
+
+                    <td>Confirm Password</td>
+                    <td>
+                        <input type="password" name="confirm_password" id="confirm_password" required>
+                            <br><span id='message'></span>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+            <br>
+        <!-- Education Details -->
+        <fieldset>
+            <legend>Education Details</legend>
+            <table>
+                <tr>
+                    <td>Branch</td>
+                    <td>
+                        <select name="branch" required id="choose">
+                            <option value="" disabled selected hidden> </option>
+                            <option value="CSE">CSE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="CIVIL">CIVIL</option>
+                            <option value="MECH">MECH</option>
+                        </select>
+                    </td>
+                    <td>Batch</td>
+                    <td>
+                        <select name="batch" required id="choose">
+                            <option value="" disabled selected hidden> </option>
+                            <option value="2k-12">2k-12</option>
+                            <option value="2k-13">2k-13</option>
+                            <option value="2k-14">2k-14</option>
+                            <option value="2k-15">2k-15</option>
+                            <option value="2k-16">2k-16</option>
+                            <option value="2k-17">2k-17</option>
+                            <option value="2k-18">2k-18</option>
+                            <option value="2k-19">2k-19</option>
+                            <option value="2k-20">2k-20</option>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Registration No.</td>
+                    <td>
+                        <input type="number" name="reg" required>
+                    </td>
+                    <td>Roll No</td>
+                    <td>
+                        <input type="text" name="rno" required>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>Semester</td>
+                    <td>
+                        <select name="semester" required id="choose">
+                            <option value="" disabled selected hidden> </option>
+                            <option value="1st">1st</option>
+                            <option value="2nd">2nd</option>
+                            <option value="3rd">3rd</option>
+                            <option value="4th">4th</option>
+                            <option value="5th">5th</option>
+                            <option value="6th">6th</option>
+                            <option value="7th">7th</option>
+                            <option value="8th">8th</option>
+                        </select>
+                    </td>
+                    <td>Register For ?</td>
+                    <td>
+                        <select name="for" required id="choose">
+                            <option value="" disabled selected hidden> </option>
+                            <option value="student">Student</option>
+                            <option value="admin">Faculty</option>
+                            <option value="admin">Admin</option>
+                            <option value="admin">Faculty + Admin</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit" name="submit" class="button">
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="reset" value="Reset" name="reset" class="button">
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+    </form>
+</center>
+</section>
+<!-- Main Footer -->
+<footer class=" bg-teal text-white text-center footer">
+<div class="container">
+<div style="text-align: center">
+<h3>Copyright © 2019, <a href="https://www.lnjpitchapra.in" style="color: white"><b>LNJPIT, CHAPRA</b></a> </h3>
+<h6>All Rights Reserved</h6>
+<h6>Developed & Maintained by
+<a class="text-warning" href="https://www.facebook.com/Lnjpitians" target="_blank">
+<i class="fa fa-users"></i>  <b>LNJPITian Stars</b>
+</a>
+</h6>
+	<div class="row" style="margin-left:40%;">
+	<a href="https://www.lnjpitchapra.in" target="_blank" style="padding:5px 5px;"> <img src="img/website.png" width="20" height="20" alt="Website"></a>
+	<a href="mailto:academiclnjpit@gmail.com" target="_blank" style="padding:5px 5px;"> <img src="img/gmail.png" width="20" height="20" alt="Gmail"></a>
+	<a href="https://www.facebook.com/lnjpit" target="_blank" style="padding:5px 5px"><img src="img/facebook.png" width="20" height="20" alt="Facebook" style="background-color:white;"> </a>
+	<a href="https://api.whatsapp.com/send?phone=0000000000" target="_blank" style="padding:5px 5px;"><img src="img/whatsapp.png" width="20" height="20" alt="Whatsapp"></a>
+	<a href="https://www.twitter.com"  target="_blank"style="padding:5px 5px;"><img src="img/twitter.png" width="20" height="20" alt="Twitter"></a>
+	<a href="https://www.instagram.com/lnjpit" target="_blank" style="padding: 5px 5px;"><img src="img/instagram.png" width="20" height="20" alt="Instagram"></a>
+	<a href="https://www.youtube.com/channel/UCJCNEgs8p4VQHTGKguNtfVA"target="_blank" style="padding: 5px 5px;"><img src="img/youtube.png" width="20" height="20" alt="Youtube" style="background-color:white;"></a>
+		</div>
+</div>
+</div>
+</footer>
+
+<script type='text/javascript'>
+$("#choose").change(function () {
+if($(this).val() == "0") $(this).addClass("empty");
+else $(this).removeClass("empty")
+});
+$("#choose").change();
+function preview_image(event) 
+{
+ var reader = new FileReader();
+ reader.onload = function()
+ {
+  var output = document.getElementById('output_image');
+  output.src = reader.result;
+ }
+ reader.readAsDataURL(event.target.files[0]);
+}
+</script>
+<script>
+
+$('#password, #confirm_password').on('keyup', function () {
+if ($('#password').val() == $('#confirm_password').val()) {
+$('#message').html('Password Matched').css('color', 'green');
+} else
+$('#message').html('Password Not Matched').css('color', 'red');
+});
+
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+event.preventDefault();
+$(this).ekkoLightbox();
+})
+</script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+</body>
+</html>
